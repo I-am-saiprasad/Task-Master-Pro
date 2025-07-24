@@ -48,12 +48,12 @@ jobs:
 
     - name: build Docker image
       run: |
-        docker build -t vinodzeno/taskmaster:latest .
+        docker build -t saiprasad690/taskmaster:latest .
   
     - name: Trivy scan
-      run: trivy image --format table -o image.html vinod/taskmaster:latest
+      run: trivy image --format table -o image.html saiprasad/taskmaster:latest
 
     - name: push Docker image
       run: |
-        docker push vinodzeno/taskmaster:latest
+        docker push saiprasad690/taskmaster:latest
 
