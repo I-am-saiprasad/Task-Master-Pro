@@ -56,3 +56,4 @@ jobs:
     - name: push Docker image
       run: |
         docker push vinodzeno/taskmaster:latest
+
