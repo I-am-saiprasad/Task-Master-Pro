@@ -51,7 +51,7 @@ jobs:
         docker build -t saiprasad690/taskmaster:latest .
   
     - name: Trivy scan
-      run: trivy image --format table -o image.html saiprasad/taskmaster:latest
+      run: trivy image --format table -o image.html saiprasad690/taskmaster:latest
 
     - name: push Docker image
       run: |
